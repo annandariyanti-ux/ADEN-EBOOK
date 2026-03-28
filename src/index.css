@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900 font-sans;
+  }
+}
+
+.ebook-content h1 {
+  @apply font-serif text-4xl mb-8 mt-12 text-stone-900;
+}
+
+.ebook-content h2 {
+  @apply font-serif text-2xl mb-4 mt-8 text-stone-800 border-b border-stone-200 pb-2;
+}
+
+.ebook-content h3 {
+  @apply font-sans font-bold text-lg mb-2 mt-6 text-stone-700;
+}
+
+.ebook-content p {
+  @apply mb-4 leading-relaxed text-stone-600;
+}
+
+.ebook-content ul, .ebook-content ol {
+  @apply mb-4 ml-6 list-disc;
+}
+
+.ebook-content li {
+  @apply mb-2 text-stone-600;
+}
+

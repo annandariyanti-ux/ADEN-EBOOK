@@ -1,11 +1,31 @@
-<div align="center">
+# Aden Generator Ebook AI
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+AI-powered eBook generator that creates complete, structured, and sellable eBooks in Indonesian.
 
-  <h1>Built with AI Studio</h2>
+## Deployment on Vercel
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+To deploy this project on Vercel, follow these steps:
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1.  **Push the code to GitHub**: Create a new repository and push your code.
+2.  **Connect to Vercel**: Go to [vercel.com](https://vercel.com) and import your repository.
+3.  **Configure Environment Variables**:
+    *   In the Vercel dashboard, go to your project's **Settings** > **Environment Variables**.
+    *   Add a new variable:
+        *   **Name**: `GEMINI_API_KEY`
+        *   **Value**: Your Google Gemini API key.
+4.  **Deploy**: Vercel will automatically detect the Vite project and deploy it.
 
-</div>
+## Local Development
+
+1.  Install dependencies:
+    ```bash
+    npm install
+    ```
+2.  Create a `.env` file and add your `GEMINI_API_KEY`:
+    ```env
+    GEMINI_API_KEY=your_api_key_here
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
